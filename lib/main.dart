@@ -12,21 +12,28 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          //verticalDirection: VerticalDirection.up,
+          //mainAxisAlignment: MainAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircleAvatar(
-              radius: 50,
-              backgroundImage: NetworkImage(
-                  'https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=622&q=80'),
-            ),
+                radius: 50,
+                backgroundImage: AssetImage('images/samuel-raita.jpg')),
             Text('Vijay Gohel',
                 style: TextStyle(
+                  fontFamily: 'Pacifico',
                   fontSize: 40,
-                  fontWeight: FontWeight.bold,
+                  // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 )),
+            Text(
+              'FLUTTER DEVLOPER',
+              style: TextStyle(
+                fontFamily: 'SourceSansPro-Light',
+                letterSpacing: 2.5,
+                fontWeight: FontWeight.bold,
+                color: Colors.teal[100],
+              ),
+            )
           ],
         )),
       ),
