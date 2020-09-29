@@ -16,31 +16,17 @@ class MyApp extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           //verticalDirection: VerticalDirection.up,
           children: [
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.teal[100],
-              child: Text("Hello !"),
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: NetworkImage(
+                  'https://images.unsplash.com/photo-1566753323558-f4e0952af115?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=622&q=80'),
             ),
-            SizedBox(
-              //container will work too
-              height: 10,
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.teal[200],
-              child: Text("Hello !"),
-            ),
-            Container(
-              height: 100,
-              width: 100,
-              color: Colors.teal[300],
-              child: Text("Hello !"),
-            ),
-            Container(
-              width: double.infinity,
-            ),
+            Text('Vijay Gohel',
+                style: TextStyle(
+                  fontSize: 40,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                )),
           ],
         )),
       ),
