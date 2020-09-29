@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
             child: Column(
-          //mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
           //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircleAvatar(
@@ -25,6 +25,9 @@ class MyApp extends StatelessWidget {
                   // fontWeight: FontWeight.bold,
                   color: Colors.white,
                 )),
+            SizedBox(
+              height: 10,
+            ),
             Text(
               'FLUTTER DEVLOPER',
               style: TextStyle(
@@ -34,46 +37,37 @@ class MyApp extends StatelessWidget {
                 color: Colors.teal[100],
               ),
             ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.fromLTRB(25, 25, 25, 10),
-              child: Row(
-                children: [
-                  Icon(Icons.phone, color: Colors.teal),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Text(
+            SizedBox(
+              height: 7,
+              width: 170,
+              child: Divider(
+                color: Colors.teal[100],
+              ),
+            ),
+            Card(
+                margin: EdgeInsets.fromLTRB(25, 25, 25, 10),
+                child: ListTile(
+                  leading: Icon(Icons.phone, color: Colors.teal),
+                  title: Text(
                     '+91 9426603813',
                     style: TextStyle(
                         color: Colors.teal,
                         fontSize: 20,
                         fontFamily: 'SourceSansPro-Light'),
-                  )
-                ],
-              ),
-            ),
-            Container(
-              color: Colors.white,
-              padding: EdgeInsets.all(10),
-              margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25),
-              child: Row(
-                children: [
-                  Icon(Icons.email, color: Colors.teal),
-                  SizedBox(
-                    width: 10,
                   ),
-                  Text(
-                    'vijaygohel5454@gmail.com',
+                )),
+            Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25),
+                child: ListTile(
+                  leading: Icon(Icons.email, color: Colors.teal),
+                  title: Text(
+                    'vijaygohel@gmail.com',
                     style: TextStyle(
                         color: Colors.teal,
                         fontSize: 20,
                         fontFamily: 'SourceSansPro-Light'),
-                  )
-                ],
-              ),
-            ),
+                  ),
+                )),
           ],
         )),
       ),
